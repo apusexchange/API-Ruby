@@ -1,56 +1,52 @@
 # API-Ruby
 
-SDK da plataforma de pagamento Apus. 
+ApusPayments is a plataform to make payments using criptocurrencies. 
+
 * Language: Ruby
 
-## Principais recursos
+[Documentation API (v0.0.1)](https://docs.apuspayments.com/)
 
-* [x] Pagamentos por cartão.
-* [ ] Pagamentos recorrentes.
-* [ ] Pagamentos por transferência.
-* [ ] Consulta de pagamentos.
+## Examples of use 
 
-<hr>
-
-## Blockchains suportadas
-
-| Blockchain       | Constante              | Recorrente |
-|------------------|------------------------|------------|
-| Bitcoin          | Blockchain::BTC        | Sim        |
-| Decred           | CreditCard::DCR        | Sim        |
-| Ethereum         | CreditCard::ETH        | Sim        |
-| Litecoin         | CreditCard::LTC        | Sim        |
+* [ ] Payments by card
+* [ ] Recurring payments
+* [ ] Cancel payment
+* [ ] Consult payments
+* [ ] Cryptocurrency recharge
 
 <hr>
 
-## Pagamentos por cartão.
-
-Pagamentos utilizando número do cartão e senha
-
-### Requisição
-
-> POST https://api.apus.exchange/v1/pay/
+## Payments by card
 
 ```ruby
-{
-  "card": "0000111122223333",
-  "password": "*******",
-  "type": Blockchain.BTC,
-  "amount": 10.00,
-  "currency": "BRL"
-}
+<?php echo "Payments by card"; ?>
 ```
- 
-### Resposta
+
+<hr>
+
+## Recurring payments
 
 ```ruby
-{
-    "status": true,
-    "message": "Pagamento aprovado",
-    "txid": "d5a82f2e8469b1d30a98cbca29c40cb732c46c6b19ab729e1785806237417153",
-    "data": {
-        "serial": "A666A",
-        "buyer": "João Comprador"
-    }
-}
+<?php echo "Recurring payments"); ?>
+```
+<hr>
+
+## Cancel payment
+
+```ruby
+<?php echo "Cancel payment"); ?>
+```
+<hr>
+
+## Consult payments
+
+```ruby
+<?php echo "Consult payments"); ?>
+```
+<hr>
+
+## Cryptocurrency recharge
+
+```ruby
+<?php echo "Cryptocurrency recharge"); ?>
 ```
